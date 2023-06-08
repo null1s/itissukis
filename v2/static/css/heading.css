@@ -1,0 +1,15 @@
+/* .heading {
+    ;
+    width: 100% !important;
+    top:0; 
+    right:0; 
+    background-repeat: no-repeat;
+} */
+
+.headimg {
+    width: 16%;
+    border: 3px solid #e5e7eb;
+    border-radius: 50%;
+    margin-left: 10px;
+    transition: 0.3s;
+}
