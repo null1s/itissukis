@@ -52,11 +52,13 @@ a {
     text-decoration: none;
 }
 .navbar {
-    width: 100%;
-    min-height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    min-height: 70px;
+    transition: all 0.5s;
+    border-radius: 20px;
 }
 .nav-menu {
     display: flex;
@@ -64,16 +66,23 @@ a {
     align-items: center;
     gap: 40px;
 }
-.nav-branding {
-    font-size: 1.75rem;
-    color: #e5e7eb;
-}
 .nav-link {
     transition: 0.3s;
 }
 .nav-link:hover {
     color: #e5e7e5;
     transition: 0.3s;
+}
+.nav-branding {
+    font-size: 1.75rem;
+    color: #e5e7eb;
+}
+
+.nav-scrolled {
+    background-color: #36454F;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 0px 20px;
 }
 .hamburger {
     display: none;
@@ -91,9 +100,6 @@ a {
 
 /* ------------------------- */
 /* Konteineris: PAGRINDINIS */
-/* #pagrindinis {
-    margin-top: 70px;
-} */
 #pagrindinis img {
     max-width: 100%;
     width: 150%;
@@ -105,7 +111,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: #00000073;
     border-radius: 25px;
     color: #e5e7e5;
     padding: 10px 20px;
@@ -133,6 +139,8 @@ a {
 }
 
 .about-title {
+    padding: 50px;
+    text-align: center;
     color: #e5e7e5;
 }
 

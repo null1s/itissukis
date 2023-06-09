@@ -39,11 +39,11 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 }))
 
 // --------------------------
-const headerEl = document.querySelector(".nav-menu");
+const headerEl = document.querySelector(".navbar");
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 80) {
-        headerEl.classList.add("header-scrolled")
-    } else if (window.scrollY <= 80) {
-        headerEl.classList.remove("header-scrolled")
+    if (window.scrollY > 50) {
+        headerEl.classList.add("nav-scrolled")
+    } else if (window.scrollY <= 50) {
+        headerEl.classList.remove("nav-scrolled")
     }
 })
