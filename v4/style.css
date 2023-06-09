@@ -20,7 +20,7 @@ body {
     border-radius: 7px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #2b2b2b; 
+    background: #333333; 
 }
 
 header {
