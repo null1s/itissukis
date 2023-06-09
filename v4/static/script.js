@@ -19,7 +19,7 @@ function showMessage() {
         message = 'You are viewing this website on a small screen.';
     }
 
-    alert(message);
+    // alert(message);
 }
 
 showMessage();
