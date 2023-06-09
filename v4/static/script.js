@@ -37,3 +37,13 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     hamburger.classList.remove("active")
     navMenu.classList.remove("active")
 }))
+
+// --------------------------
+const headerEl = document.querySelector(".nav-menu");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 80) {
+        headerEl.classList.add("header-scrolled")
+    } else if (window.scrollY <= 80) {
+        headerEl.classList.remove("header-scrolled")
+    }
+})

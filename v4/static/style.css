@@ -31,7 +31,7 @@ html {
 /* ------------------------- */
 /* NAVIGACIJA */
 header {
-    background-color: #262626;
+    background-color: transparent;
     position: fixed;
     top: 0;
     width: 100%;
@@ -91,13 +91,13 @@ a {
 
 /* ------------------------- */
 /* Konteineris: PAGRINDINIS */
-#pagrindinis {
+/* #pagrindinis {
     margin-top: 70px;
-}
+} */
 #pagrindinis img {
     max-width: 100%;
     width: 150%;
-    height: 89vh;
+    height: 100vh;
     display: inline-block;
 }
 .text-overlay {
@@ -105,7 +105,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.45);
     border-radius: 25px;
     color: #e5e7e5;
     padding: 10px 20px;
@@ -132,6 +132,9 @@ a {
     text-align: center;
 }
 
+.about-title {
+    color: #e5e7e5;
+}
 
 
 /* ------------------------- */
