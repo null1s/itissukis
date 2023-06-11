@@ -144,7 +144,77 @@ a {
     color: #e5e7e5;
 }
 
-
+/* ------------------------- */
+/* Konteineris: FOOTER */
+.footercont {
+    max-width: 1170px;
+    margin: auto;
+    line-height: 1.5;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4 {
+    font-size: 20px;
+    color: #e2e2e2;
+    margin-bottom: 30px;
+    position: relative;
+}
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    top: 30px;
+    background: #777777;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col a {
+    color: #000000;
+}
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+.footer-col ul li a {
+    font-size: 16px;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+    color: #e5e7e5;
+    margin-left: 6px;
+    transition: all 0.3s ease;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    border-radius: 25px;
+    background-color: #121315;
+    margin-right: 0 10px 10px 0;
+    text-align: center;
+    line-height: 45px;
+    color: #bbbbbb;
+    transition: all 0.3s ease;
+}
+.footer-col .social-links a:hover{
+    color: #e5e7e5;
+    transition: all 0.3s ease;
+}
+.footer-col h5 {
+    color: #808080;
+}
 /* ------------------------- */
 /* MEDIA TAGS */
 @media(max-width: 1600px){
@@ -152,7 +222,8 @@ a {
         width: 100%;
     }
 }
-@media(max-width: 768px) {
+/* @media(max) */
+@media(max-width: 850px) {
     .hamburger {
         display: block;
     }
@@ -168,14 +239,19 @@ a {
 
     .nav-menu {
         position: fixed;
-        left: -100%;
+        left: -150%;
         top: 70px;
         gap: 0;
         flex-direction: column;
         background-color: #262626;
+        color: #bbbbbb;
         width: 100%;
         text-align: center;
-        transition: 0.3s;
+        transition: 0.5s;
+        /* background-color: #36454F; */
+        /* border-radius: 20px; */
+        margin: 20px;
+        padding: 0px 30px;
     }
     .nav-item {
         margin: 16px 0;
