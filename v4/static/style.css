@@ -222,7 +222,12 @@ a {
         width: 100%;
     }
 }
-/* @media(max) */
+@media(max-width: 757px) {
+    .footer-col {
+        width: 25%;
+        margin-bottom: 30px;
+    }
+}
 @media(max-width: 850px) {
     .hamburger {
         display: block;
