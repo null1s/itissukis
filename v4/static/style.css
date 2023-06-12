@@ -34,10 +34,10 @@ header {
     background-color: transparent;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 95%;
 }
 .container {
-    width: 1600px;
+    width: 100%;
     margin: auto;
 }
 .subcontainer {
@@ -79,7 +79,7 @@ a {
 }
 
 .nav-scrolled {
-    background-color: #36454F;
+    background-color: #36454fda;
     border-radius: 20px;
     margin: 20px;
     padding: 0px 30px;
@@ -248,18 +248,17 @@ a {
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: #262626;
         color: #bbbbbb;
-        width: 100%;
+        width: 81%;
         text-align: center;
         transition: 0.5s;
-        /* background-color: #36454F; */
-        /* border-radius: 20px; */
-        margin: 20px;
-        padding: 0px 30px;
+        background-color: #36454fda;
+        margin: 20px 71px;
+        /* padding: 0px 30px; */
+        border-radius: 20px;
     }
     .nav-item {
-        margin: 16px 0;
+        margin: 14px 0;
     }
     .nav-menu.active {
         left: 0;
