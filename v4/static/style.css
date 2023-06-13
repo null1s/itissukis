@@ -153,7 +153,7 @@ a {
 /* ------------------------- */
 /* Konteineris: KLAUSIMYNAS */
 #klausimynas {
-    background-color: #24262b;
+    background-color: #1C1C20; 
     min-height: 100vh;
     margin: 0 auto;
     display: flex;
@@ -161,8 +161,12 @@ a {
     align-items: center;
 }
 .faq-title {
+    margin: 2rem 0rem;
     color: #e2e2e2;
-    margin-top: 5rem;
+    margin: 5rem 1rem 1rem 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .faq-title-high {
     background: -webkit-linear-gradient(#eee, #333);
@@ -170,15 +174,18 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.faq-col {
+.faq {
+    width: 80%;
     max-width: 700px;
-    margin-top: 2rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid #777777;
     cursor: pointer;
-    /* background-color: #24262b; */
-    color: #e5e7e5;
     transition: 0.3s;
+    background-color: #24262b;
+    padding: 18px;
+    border-radius: 25px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
 }
 .faq-q {
     display: flex;
@@ -186,24 +193,43 @@ a {
     align-items: center;
 }
 .faq-q h3 {
-    font-size: 1.8rem;
-}
-.faq-a {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 1.4s ease,
+    padding-left: 10px;
+    font-size: 1.6rem;
+    color: #e5e7eb;
 }
 .faq-a p {
     padding-top: 1rem;
     line-height: 1.6;
     font-size: 1.4rem;
+    color: #c1c2c5;
+    padding: 5px 10px;
+}
+.faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+    /* animation: fade 1s ease-in-out; */
+}
+.arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    padding-left: 10px;
+    font-size: 1.6rem;
+    color: #e5e7eb;
+    margin-right: 10px;
 }
 
-#klausimynas.active .faq-a {
-    max-height: 300px;
-    animation: fade 1s ease-in-out;
+.arrow.rotate {
+    transform: rotate(180deg);
 }
-#klausimynas.active i {
+
+.faq.active .faq-a {
+    max-height: 300px;
+    /* animation: fade 1s ease-in-out; */
+}
+.faq.active i {
     transform: rotate(180deg);
 }
 i {

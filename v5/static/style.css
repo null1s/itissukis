@@ -109,13 +109,6 @@ a {
     display: inline-block;
     object-fit: cover;
 }
-/* .bg-img {
-    height: 100vh;
-    width: 99.4vw;
-    object-fit: cover;
-    filter: brightness(0.9);
-    position: absolute;
-} */
 .text-overlay {
     position: absolute;
     top: 50%;
@@ -158,15 +151,17 @@ a {
 /* ------------------------- */
 /* Konteineris: KLAUSIMYNAS */
 #klausimynas {
-    background-color: #1C1C20;
-    height: 120vh;
+    background-color: #1C1C20; 
+    min-height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .faq-title {
+    margin: 2rem 0rem;
     color: #e2e2e2;
+    font-size: 28px;
     margin: 5rem 1rem 1rem 1rem;
     align-items: center;
     justify-content: center;
@@ -177,38 +172,79 @@ a {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-decoration: underline;
 }
-.accordion {
-    background-color: #1C1C20;
-    color: #e5e7eb;
-    font-size: 1.1rem;
-    cursor: pointer;
-    padding: 18px;
+.faq {
     width: 80%;
+    max-width: 700px;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #24262b;
+    padding: 18px;
+    border-radius: 25px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.faq-q {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.active {
-    background-color: #1C1C20;
-}
-.active i{
-    transform: rotate(180deg);
-    transition: 0.5s ease;
-}
-.panel {
-    width: 80%;
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-.panel p {
+.faq-q h3 {
+    padding-left: 10px;
+    font-size: 17.6px;
+    font-weight: normal;
     color: #e5e7eb;
 }
+.faq-a p {
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #c1c2c5;
+    padding: 5px 10px;
+}
+.faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+    /* animation: fade 1s ease-in-out; */
+}
+.arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    padding-left: 10px;
+    font-size: 1.6rem;
+    color: #e5e7eb;
+    margin-right: 10px;
+}
 
+.arrow.rotate {
+    transform: rotate(180deg);
+}
+
+.faq.active .faq-a {
+    max-height: 300px;
+    /* animation: fade 1s ease-in-out; */
+}
+.faq.active i {
+    transform: rotate(180deg);
+}
+i {
+    transition: all 0.3s ease-in;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 /* ------------------------- */
 /* Konteineris: FOOTER */
 .footercont {
@@ -330,10 +366,15 @@ a {
         width: 81%;
         text-align: center;
         transition: 0.5s;
-        background-color: #36454fda;
-        margin: 20px 71px;
-        /* padding: 0px 30px; */
+        background-color: #31393F;
         border-radius: 20px;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        margin: 20px;
+        min-height: 70px;
+        padding: 0px 30px;
+    
     }
     .nav-item {
         margin: 14px 0;

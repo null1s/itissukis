@@ -26,10 +26,17 @@ window.addEventListener("scroll", () => {
 
 // -------------------------- //
 // FAQ DEZUTES                //
-const dropImg = document.getElementsByTagName("i")
+// const faqs = document.getElementsByTagName("i")
+// for(let i = 0; i < dropImg.length; i++){
+    // dropImg[i].addEventListener("click", function(){
+    //     this.classList.toggle('active')
+    // })
+// }
 
-for(let i = 0; i < dropImg.length; i++){
-    dropImg[i].addEventListener("click", function(){
-        this.classList.toggle('active')
-    })
-}
+
+const faqs = document.querySelectorAll(".faq")
+faqs.forEach((faq) => {
+    faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+    });
+});
