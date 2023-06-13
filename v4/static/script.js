@@ -1,30 +1,5 @@
-// JS code
-function getWindowSize() {
-    var width = window.innerWidth ||
-        document.documentElement.clientWidth ||
-        document.body.clientWidth;
-    
-    return width;
-}
-
-function showMessage() {
-    var width = getWindowSize();
-    var message;
-
-    if (width > 1080) {
-        message = 'You are viewing this website on a large screen.';
-    } else if (width > 768) {
-        message = 'You are viewing this website on a medium-sized screen.';
-    } else {
-        message = 'You are viewing this website on a small screen.';
-    }
-
-    // alert(message);
-}
-
-showMessage();
-// --------------------------
-
+// -------------------------- //
+// HAMBURGERIO MENIU          //
 const hamburger = document.querySelector(".hamburger")
 const navMenu = document.querySelector(".nav-menu")
 
@@ -38,7 +13,8 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     navMenu.classList.remove("active")
 }))
 
-// --------------------------
+// -------------------------- //
+// NAVBARO SPALVA         //
 const headerEl = document.querySelector(".navbar");
 window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
@@ -47,3 +23,13 @@ window.addEventListener("scroll", () => {
         headerEl.classList.remove("nav-scrolled")
     }
 })
+
+// -------------------------- //
+// FAQ DEZUTES                //
+const dropImg = document.getElementsByTagName("i")
+
+for(let i = 0; i < dropImg.length; i++){
+    dropImg[i].addEventListener("click", function(){
+        this.classList.toggle('active')
+    })
+}
