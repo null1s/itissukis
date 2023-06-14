@@ -50,7 +50,7 @@ li { /* NAV__ITEM */
     list-style: none;
 }
 a {
-    color: #c6e5ff;
+    color: #E3D6AD;
     text-decoration: none;
 }
 .navbar { /* NAV */
@@ -80,7 +80,7 @@ a {
 }
 
 .nav-scrolled {
-    background-color: #31393F;
+    background-color: #303236;
     border-radius: 20px;
     margin: 20px;
     padding: 0px 30px;
@@ -126,12 +126,13 @@ a {
 /* Konteineris: APIE */
 #apie {
     background-image: linear-gradient(#262626, #24262b);
-    height: 70vh;
-    /* width: 80%; */
     margin-top: -10px;
     padding-top: 50px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 .text-overlay2 {
     position: absolute;
     top: 50%;
@@ -145,29 +146,79 @@ a {
 }
 
 .about-title {
-    padding: 50px;
+    color: #e2e2e2;
+    font-size: 28px;
+    margin: 5rem 2rem 1rem 1rem;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    color: #e5e7e5;
 }
 .about-box {
+    max-width: 800px;
+    display: block;
     background-color: #1C1C20;
+    width: 80%;
+    border-radius: 25px;
+    margin: auto;
+    margin-bottom: 20px;
+
+}
+.about {
+    width: 80%;
+    max-width: 800px;
+    transition: 0.3s;
+    background-color: #1C1C20;
+    padding: 18px;
+    border-radius: 25px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.about-box p {
+    color: #e5e7eb;
+    padding: 30px;
+}
+.about:hover {
+    background-color: #141215;
+}
+
+.about-t {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-t h3 {
+    padding-left: 10px;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #E3D6AD;
+    font-weight: 600;
+}
+.about-d p {
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #c1c2c5;
+    padding: 5px 10px;
+}
+.about-d {
+    transition: max-height 1.4s ease;
 }
 
 /* ------------------------- */
 /* Konteineris: KLAUSIMYNAS */
 #klausimynas {
     background-color: #1C1C20; 
-    min-height: 100vh;
+    min-height: 80vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .faq-title {
-    margin: 2rem 0rem;
     color: #e2e2e2;
     font-size: 28px;
-    margin: 5rem 1rem 1rem 1rem;
+    margin: 5rem 2rem 1rem 1rem;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -181,7 +232,6 @@ a {
 .faq {
     width: 80%;
     max-width: 700px;
-    padding-bottom: 1rem;
     cursor: pointer;
     transition: 0.3s;
     background-color: #24262b;
@@ -200,7 +250,7 @@ a {
     padding-left: 10px;
     font-size: 17.6px;
     font-weight: normal;
-    color: #e5e7eb;
+    color: #E3D6AD;
 }
 .faq-a p {
     padding-top: 1rem;
