@@ -147,7 +147,7 @@ a {
 
 .about-title {
     color: #e2e2e2;
-    font-size: 28px;
+    font-size: 30px;
     margin: 5rem 2rem 1rem 1rem;
     align-items: center;
     justify-content: center;
@@ -173,15 +173,17 @@ a {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
+    transition: 0.5s ease;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.about:hover {
+    background-color: #141215;
+    transition: 0.5s ease;
 }
 .about-box p {
     color: #e5e7eb;
     padding: 30px;
 }
-.about:hover {
-    background-color: #141215;
-}
-
 .about-t {
     display: flex;
     justify-content: space-between;
@@ -206,10 +208,33 @@ a {
 }
 
 /* ------------------------- */
+/* Konteineris: KONTAKTAI */
+#kontaktai {
+    background-color: #1f1f23;
+    min-height: 70vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact {
+    width: 80%;
+    max-width: 800px;
+    transition: 0.3s;
+    background-color: #1C1C20;
+    padding: 18px;
+    border-radius: 25px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    transition: 0.5s ease;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+/* ------------------------- */
 /* Konteineris: KLAUSIMYNAS */
 #klausimynas {
     background-color: #1C1C20; 
-    min-height: 80vh;
+    min-height: 70vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -217,7 +242,7 @@ a {
 }
 .faq-title {
     color: #e2e2e2;
-    font-size: 28px;
+    font-size: 30px;
     margin: 5rem 2rem 1rem 1rem;
     align-items: center;
     justify-content: center;
@@ -240,6 +265,8 @@ a {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
 }
 .faq-q {
     display: flex;
@@ -379,6 +406,7 @@ i {
     text-align: center;
     font-size: 20px;
 }
+
 /* ------------------------- */
 /* MEDIA TAGS */
 @media(max-width: 1600px){
@@ -410,7 +438,6 @@ i {
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
-
     .nav-menu {
         position: fixed;
         left: -150%;
@@ -421,15 +448,16 @@ i {
         width: 81%;
         text-align: center;
         transition: 0.5s;
-        background-color: #31393F;
+        /* background-color: #31393F; */
         border-radius: 20px;
         align-items: center;
-        width: 100%;
-        margin: auto;
-        margin: 20px;
+        width: 84.5%;
+        margin: 20px 0;
+        /* margin: 20px; */
         min-height: 70px;
-        padding: 0px 30px;
-    
+        background-color: #303236;
+        transition: 0.5s;
+        margin: 0 60px;
     }
     .nav-item {
         margin: 14px 0;
