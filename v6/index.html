@@ -9,36 +9,32 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <a href="#" class="nav-branding">
-                    <i class="fa-solid fa-star fa-2xs" style="color: #e5e7eb; margin-right: 4px;"></i>
-                    Nolikas
-                </a>
-                <ul class="nav-menu"> 
-                    <li class="nav-item"> 
-                        <a href="#" class="nav-link">Pagrindinis</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#apie" class="nav-link">Apie</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#kontaktai" class="nav-link">Kontaktai</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#klausimynas" class="nav-link">Klausimynas</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a href="#footer" class="nav-link">Poraštė</a>
-                    </li> -->
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
-        </div>
+        <!-- <div class="container"> -->
+        <nav id = "hamb" class="navbar">
+            <a href="#" class="nav-branding">
+                <i class="fa-solid fa-star fa-2xs" style="color: #e5e7eb; margin-right: 4px;"></i>
+                Nolikas
+            </a>
+            <ul class="nav-menu"> 
+                <li class="nav-item"> 
+                    <a href="#" class="nav-link">Pagrindinis</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#apie" class="nav-link">Apie</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#kontaktai" class="nav-link">Kontaktai</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#klausimynas" class="nav-link">Klausimynas</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </header>
     <section id="pagrindinis">
         <img class="bg-img" src="https://images.unsplash.com/photo-1532032659282-dc3fe9336831?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="bg">
@@ -48,13 +44,13 @@
         <a href="#apie">
             <i class="fa fa-solid fa-chevron-down about-arrow" style="color:#e5e7e5; margin-top: 200px;"></i>
         </a>
-        <h1 class="about-title">Truputis apie mane</h1>
+        <h1 class="about-title">Apie mane</h1>
         <div class="about">
             <div class="about-t">
                 <h3 class="about-t">Mokykla</h3>
             </div>
             <div class="about-d">
-                <p class="about-d">Mokykloje dažniausiai būnu tas gerasis vaikas, kuris klauso mokytojų ir visą laiką ruošia namų darbus, bet kartais taip pasitaiko, kad arba pritrūksta laiko, arba kartais net ir truputį patingiu atlikti tai, kas privalo būti atlikta.</p>
+                <p class="about-d">Mokykloje dažniausiai būnu tas gerasis mokinys, kuris klauso mokytojų ir visą laiką ruošia namų darbus. Žinoma, kartais pasitaiko, kad arba pritrūksta laiko, arba truputį patingiu atlikti tai, kas privalo būti atlikta.</p>
             </div>
         </div>
         <div class="about">
@@ -62,7 +58,7 @@
                 <h3 class="about-t">Programavimas</h3>
             </div>
             <div class="about-d">
-                <p class="about-d">Pirmą kartą programuoti pradėjau gal būt prieš 3 metus, kai dar tuo metu labai daug naudojausi Discord platforma bendravimui su draugais. Buvau labai susidomėjęs kaip reikia daryti Discord Bot'us, todėl po daug pražiūrėtų pavyzdinių video buvau nusiteikęs sukurti savo pirmąjį robotą! Aišku jis buvo labai paprastas bei primityvus, parašytas Python kalba. Bet po truputį stengiausi tobulinti savo įgūdžius ir pavyko pasiekti Svetainių kūrimo lygį! (HTML + CSS + JS). Jau gali beveik bet kas mane nusamdyti padaryti kažkokį projektą už mažą kainą ir džiaugtis stulbinančiais rezultatais.</p>
+                <p class="about-d">Pirmą kartą programuoti pradėjau maždaug prieš 3 metus, kai dažnai naudojausi Discord platforma bendravimui su draugais. Buvau labai susidomėjęs, kaip reikia daryti Discord Bot'us. Po daug pražiūrėtų pavyzdinių video buvau nusiteikęs sukurti savo pirmąjį robotą! Aišku, jis buvo labai paprastas bei primityvus, parašytas Python kalba. Bet po truputį stengiausi tobulinti savo įgūdžius ir pavyko pasiekti Svetainių kūrimo lygį! (HTML + CSS + JS). Šiandien aš jau galiu sukurti kažkokį projektą už mažą kainą ir jūs galėsite džiaugtis stulbinančiais rezultatais.</p>
             </div>
         </div>
         <div class="about">
@@ -70,7 +66,7 @@
                 <h3 class="about-t">Sportas</h3>
             </div>
             <div class="about-d">
-                <p class="about-d">Galiu drąsiai sakyti, jog sportuoju kiekvieną dieną. Nuo pat pirmos klasės lankau ir krepšinį ir pramoginius šokius. Stengiuosi palaikyti formą, bet kartais visur kiekvieną dieną nesuspėju. Anksčiau svajodavau tapti profesionaliu krepšininku, bet kuo toliau, tuo labiau matau save labiau pavykusiu Programavimo skyriuje. Net jei ir gaučiau kokį programuotojo darbą, manau sporto neapleisčiau ir judėčiau toliau kiekvieną dieną dėl savęs.</p>
+                <p class="about-d">Galiu drąsiai sakyti, jog sportuoju kiekvieną dieną. Nuo 7 m. pradėjau lankyti krepšinio treniruotes ir sportinius šokius. Abi sporto šakos mane lydi ir šiandien, tad fizinis aktyvumas ir ištvermės reikalaujančios treniruotės man nesvetimos. Anksčiau svajodavau tapti profesionaliu krepšininku, bet kuo toliau, tuo labiau matau save Programavimo skyriuje. Tad jei ir gaučiau kokį programuotojo darbą, manau sporto neapleisčiau ir judėčiau toliau kiekvieną dieną dėl savęs.</p>
             </div>
         </div>
         <div class="about" style="margin-bottom: 4rem;">
@@ -78,7 +74,7 @@
                 <h3 class="about-t">Lasvalaikis</h3>
             </div>
             <div class="about-d">
-                <p class="about-d">Tiek daug mokinantis ir sportuojant mano laisvo laiko galima sakyti nelieka, nebent pasistengiu ir suspėju viską pasidaryti greičiau ar mokykloje užduoda mažiau namų darbų. Tuomet dažniausiai einu į lauką, kažką pažaidžiu vienas ar sudraugais, o vėliau keliauju atgal namo. Taip pat mėgstu važinėtis dviračiu. Paskutinioji kelionė buvo kai su dviračiais važiavome iš Kretingos į Panalgą, J. Basanavičiaus gatvę ir vėliau prie jūros. Kaip visada, buvo nepamirštami įspūdžiai. O jei už lango lyja ar bjaurus oras, dažniausiai žaidžiu kompiuterinius žaidimus. Mano mėgstamiausi: CS:GO, NBA2k23. Kartais su draugais pažaidžiame ir Minecraft.</p>
+                <p class="about-d">Tiek daug mokantis ir sportuojant mano laisvo laiko mažai lieka, nebent pasistengiu ir suspėju viską pasidaryti greičiau ar mokykloje užduoda mažiau namų darbų. Tuomet dažniausiai einu į lauką, kažką pažaidžiu vienas ar su draugais, o vėliau keliauju atgal namo. Taip pat mėgstu važinėtis dviračiu. Paskutinioji kelionė buvo, kai su dviračiais važiavome iš Kretingos į Palangą, J. Basanavičiaus gatvę ir vėliau prie jūros. Kaip visada, buvo nepamirštami įspūdžiai. O jei už lango lyja ar bjaurus oras, dažniausiai žaidžiu kompiuterinius žaidimus. Mano mėgstamiausi: CS:GO, NBA2k23. Kartais su draugais pažaidžiame ir Minecraft.</p>
             </div>
         </div>
     </section>
@@ -106,7 +102,7 @@
                 <i class="fa-solid fa-chevron-down fa-lg arrow"></i>
             </div>
             <div class="faq-a">
-                <p class="faq-a">Tiesiog kiekvieną dieną stengiuosi susiplanuoti savo laiką ir jei turiu atliekamo laisvo laiko, atlieku tolimesnius darbus arba mokinuosi naujų programavimo įgūdžių.</p>
+                <p class="faq-a">Tiesiog kiekvieną dieną stengiuosi susiplanuoti savo laiką ir kasdien atlieku tolimesnius darbus arba mokinuosi naujų programavimo įgūdžių.</p>
             </div>
         </div>
         <div class="faq">
@@ -115,7 +111,7 @@
                 <i class="fa-solid fa-chevron-down fa-lg arrow"></i>
             </div>
             <div class="faq-a">
-                <p class="faq-a">Tiesiog kiekvieną dieną stengiuosi susiplanuoti savo laiką ir jei turiu atliekamo laisvo laiko, atlieku tolimesnius darbus arba mokiniuosi naujų programavimo įgūdžių.</p>
+                <p class="faq-a">Esu 9-tos klasės mokinys, kurio mokymosi rezultatai labai geri. Neigiamų įvertinimų neturiu ir tuo labai džiaugiuosi.</p>
             </div>
         </div>
         <div class="faq">
@@ -124,7 +120,7 @@
                 <i class="fa-solid fa-chevron-down fa-lg arrow"></i>
             </div>
             <div class="faq-a">
-                <p class="faq-a">Tiesiog kiekvieną dieną stengiuosi susiplanuoti savo laiką ir jei turiu atliekamo laisvo laiko, atlieku tolimesnius darbus arba mokiniuosi naujų programavimo įgūdžių.</p>
+                <p class="faq-a">Tai atsitiktinai sugalvotas slapyvardis,  prisijungiant prie Discord programos, kuris liko iki dabar.</p>
             </div>
         </div><br>
         <!-- Apie GPT-4 -->
